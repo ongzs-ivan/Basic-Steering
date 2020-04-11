@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e362b865446d024f9dfd55703389e9b, type: 3}
+  m_Name: TestBoid
+  m_EditorClassIdentifier: 
+  mass: 15
+  mVelocity: 5
+  mForce: 3
+  mAhead: 10
+  mAvoidForce: 10
+  targetWeight: 0
+  SeparationForce: 50
+  SeparationRadius: 1
+  DetectionRadius: 2.5
