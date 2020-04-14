@@ -35,6 +35,7 @@ public class Boids : MonoBehaviour
         steer += align(boid);
         steer += cohesion(boid);
         steer -= separate(boid);
+        Debug.Log(steer);
         //steer += collisionAvoidance(obstacleList);
         
         steer = Vector3.ClampMagnitude(steer, settings.mForce);
@@ -172,7 +173,7 @@ public class Boids : MonoBehaviour
         }
         return sum * settings.SeparationForce;
     }
-
+    
     // Cohesion
     private Vector3 cohesion(List<Boids> boids)
     {
